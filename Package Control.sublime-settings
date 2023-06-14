@@ -1,0 +1,23 @@
+{
+	"bootstrapped": true,
+	"debug": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"1337 Color Scheme",
+		"3024 Color Scheme",
+		"BracketHighlighter",
+		"Brackets Color Scheme",
+		"CppFastOlympicCoding",
+		"Golang",
+		"Package Control",
+		"sublimelint",
+		"SublimeLinter",
+		"SublimeLinter-clang",
+		"SublimeLinter-cppcheck",
+		"SublimeLinter-cpplint",
+		"Terminus"
+	]
+}

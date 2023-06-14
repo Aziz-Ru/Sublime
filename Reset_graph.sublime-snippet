@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+void reset_Graph(){
+  for(int i=0;i<=n;i++){
+    path[i]=0,vis[i]=0;
+    gp[i].clear();
+  }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>S_Reset_Graph</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	 <scope>source.c++</scope> -->
+</snippet>

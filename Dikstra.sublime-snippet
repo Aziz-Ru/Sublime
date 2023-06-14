@@ -1,0 +1,47 @@
+<snippet>
+	<content><![CDATA[
+int n,m;
+int path[siz];
+int vis[siz];
+vector<int> dist(siz,LONG_MAX);
+vector<pair<int,int>> gp[siz];
+
+void Dijkstra(int source){
+
+dist[source]=0;
+path[source]=-1;
+set<pair<int,int>>AreaG;
+AreaG.insert({0,source});
+//{wt,vertex}
+
+while(!AreaG.empty()){
+  auto x=*(AreaG.begin());
+  int parent=x.ss;
+  int parent_wt=x.ff;
+  AreaG.erase(AreaG.begin());
+
+  for(auto it:gp[x.ss]){
+    int child=it.ff;
+    int child_wt=it.ss;
+
+
+    if(dist[parent]+child_wt<dist[child]){
+
+      AreaG.erase({dist[child],child});
+      dist[child]=dist[parent]+child_wt;
+      AreaG.insert({dist[child],child});
+      path[child]=parent;
+    }
+
+  }
+ }
+
+}
+
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>S_Dijkstra</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	 <scope>source.c++</scope> -->
+</snippet>

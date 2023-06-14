@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+vector<int> Path_Of_Vertex(int x){
+  vector<int>ans;
+  ans.push_back(x);
+  while(path[x]!=-1){
+  ans.push_back(path[x]);
+  x=path[x];
+  
+ }
+ reverse(all(ans));
+ return ans;
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	 <tabTrigger>S_Path_of_vertex</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	 <scope>source.c++</scope> 
+</snippet>
